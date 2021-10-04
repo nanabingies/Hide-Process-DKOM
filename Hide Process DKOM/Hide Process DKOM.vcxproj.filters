@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Hide Proc">
+      <UniqueIdentifier>{b01af632-a515-46fa-af19-965329c3991f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Loader">
+      <UniqueIdentifier>{348648cd-74c2-4739-8ec3-e86ea8718560}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="HideProcessDKOM.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Hide Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveEntry.c">
+      <Filter>Hide Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="Ioctl.c">
+      <Filter>Hide Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverMain.c">
+      <Filter>Hide Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Loader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h">
+      <Filter>Hide Proc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
